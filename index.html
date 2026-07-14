@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LojaSuperDuSemanal | Marketing, Comunicação e Retenção de Clientes</title>
+<title>LojaSuperDuNews | Marketing, Comunicação e Retenção de Clientes</title>
 <meta name="description" content="LojaSuperDuNews reúne conteúdos sobre marketing, retenção de clientes, comunicação, branding e relacionamento com clientes.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <link rel="canonical" href="https://lojasuperdunews.com.br">
@@ -56,7 +55,7 @@ h3 { font-size: 1.4rem; }
 
     /* ✅ ÚNICA ALTERAÇÃO: substitui os <br> */
 .dudu:first-of-type {
-  margin-top: 100px;
+  margin-top: 50px;
 }
   
  .dudu img {
@@ -91,13 +90,6 @@ img {
   max-height: 200px;
 }
 
-.news {
-  font-size: clamp(80px, 16vw, 120px);
-  color: red;
-  font-weight: bold;
-  text-align: center; 
-  margin: 10px 0;
-}
 
 .bloco-amarelo { 
     background: #f8f888; 
@@ -142,6 +134,33 @@ img {
   margin-bottom: 20px;
 }
 
+
+.btn {
+            display: block;
+            margin: 20px auto;
+            padding: 16px;
+            width: 90%;
+            max-width: 420px;
+            text-align: center;
+            border-radius: 50px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.92;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+         .news {
+            background: #EE0000;
+        }
+
 /* --- SEÇÃO DE OFERTAS RESPONSIVA --- */
 .gwd-div-ym2m {
   display: flex;
@@ -155,7 +174,7 @@ img {
 
 
 /* No PC, as imagens ficam lado a lado para não esticar a página */
-@media (min-width: 768px) {
+@media (min-width: 568px) {
   .gwd-div-ym2m {
     flex-direction: row;
   }
@@ -280,7 +299,6 @@ img {
 
 <body>
 
-
 <header>
 <h1 style="position:absolute;left:-9999px;">Loja SuperDu News</h1>
 </header>
@@ -320,13 +338,13 @@ img {
   <!-- Ofertas Lado a Lado no PC -->
 
   <div class="gwd-div-ym2m">
-    <img src="assets/livro.png" alt="Livro sobre marketing e retenção de clientes disponível na Amazon"
+    <img src="assets/cover.jpg" alt="Livro sobre marketing e retenção de clientes disponível na Amazon"
     loading="lazy">
-    <img src="assets/oferta90.png" alt="Oferta promocional com desconto de 90 por cento"
+    <img src="assets/oferta11-9.jpg" alt="Oferta promocional com desconto de 90 por cento"
     loading="lazy">
   </div>
   
-  <a href="https://www.amazon.com.br/dp/B0GKMRFGYP" target="_blank" class="botao">
+  <a href="https://www.amazon.com.br/dp/B0H8RMTLB9" target="_blank" class="botao">
     Ver na Amazon
   </a>
    
@@ -416,11 +434,19 @@ Cada estampa tem história, o tecido é super confortável e o design é incrív
     <p>Nada muito perfeito… mas funcionando.</p>
     <p>Se você chegou até aqui… já deu certo.</p>
   </div>
+  <br><br>
+
+<a class="btn news"
+                    href="https://lojasuperdunews.com.br"
+                    target="_blank">
+                    Acessar Novas Ofertas
+                </a>
+</div>
 <div class="dudu">
     <img src="assets/Loja SuperDu Logo Letreiro Face (Loja.com Preto).png" alt="Logo Loja SuperDu" style="max-width: 927px;">
   </div>
+
 </article>
 </main>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"6bbe6ea6c7334ee9a18697e57c147121","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
