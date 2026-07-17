@@ -301,22 +301,22 @@ img {
 .aparecido {
     position: relative;
     width: min(400px, 90vw);
-    height: min(600px, 90vw);
+    height: min(500px, 110vw);
     margin: 0 auto;
     overflow: hidden;
 }
 
 .aparecido img {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    
     object-fit: contain;
     transform: scale(1.5) translateY(15%);
     transform-origin: center center;
     opacity: 0;
     animation: trocarAparecido 6s infinite;
-}
 }
 
 /* Primeira imagem */
@@ -330,6 +330,22 @@ img {
 }
 
 
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+
+    .aparecido {
+        width: 90vw;
+        height: 110vw;
+    }
+
+    .aparecido img {
+        transform: scale(1.25) translateY(10%);
+    }
+
+}
+
+
+/* Animação */
 @keyframes trocarAparecido {
 
     0% {
