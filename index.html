@@ -605,11 +605,13 @@ img {
     width: min(400px, 90vw);
     height: min(400px, 90vw);
     margin: 0 auto;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .aparecido img {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -632,23 +634,15 @@ img {
 
 @keyframes trocarAparecido {
 
-    0% {
+    0%, 100% {
         opacity: 0;
     }
 
-    10% {
-        opacity: 1;
-    }
-
-    40% {
+    10%, 40% {
         opacity: 1;
     }
 
     50% {
-        opacity: 0;
-    }
-
-    100% {
         opacity: 0;
     }
 }
