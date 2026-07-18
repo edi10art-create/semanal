@@ -300,19 +300,25 @@ img {
 /* --- SEÇÃO APARECIDO --- */
 .aparecido {
     position: relative;
-    width: min(600px, 95vw);
-    height: min(600px, 95vw);
+    width: min(900px, 95vw);
+    height: min(900px, 95vw);
     margin: 0 auto;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aparecido img {
     position: absolute;
-    inset: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: contain;
-    object-position: center;
+    object-position: center center;
+
     opacity: 0;
     animation: trocarAparecido 6s infinite;
 }
