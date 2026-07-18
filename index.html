@@ -70,15 +70,20 @@ h3 { font-size: 1.4rem; }
   padding: 20px;
 }
 
-/* --- AJUSTE NAS IMAGENS (O PULO DO GATO) --- */
+/* Imagens normais da página */
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  /* No PC, a imagem nunca será maior que 60% da altura da tela */
-  max-height: 60vh; 
+  max-height: 60vh;
   object-fit: contain;
+}
+
+/* Exceção: imagens do Aparecido não obedecem ao limite geral */
+.aparecido img {
+    max-width: none;
+    max-height: none;
 }
 
 .header {
@@ -539,7 +544,7 @@ Essa experiência me ensinou a nunca mais depender de um endereço fixo para o f
 
 
 <div class="dudu">
-    <img src="assets/Loja SuperDu Logo Letreiro Face (Loja.com Preto).png" alt="Logo Loja SuperDu" style="max-width: 927px;">
+    <img src="assets/Loja SuperDu Logo Letreiro Face (Loja.com Preto).png">
   </div>
   
    <div class="bloco-final">
